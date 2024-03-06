@@ -13,6 +13,7 @@ public class CameraFollow : MonoBehaviour
         if(target == null){
             return;
         }
+    
         Vector3 nextPosition = new Vector3(
             target.position.x,
             target.position.y,

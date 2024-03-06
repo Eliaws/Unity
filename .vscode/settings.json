@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "projet-mmi.sln"
+    "dotnet.defaultSolution": "Unity-master.sln"
 }

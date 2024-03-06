@@ -24,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
 
     public bool isFacingRight = true;
 
+    public Animator animator;
     // Start is called before the first frame update
     void Start()
     {
@@ -46,6 +47,9 @@ public class PlayerMovement : MonoBehaviour
         currentNumberOfJumps = 0;
      }
     Flip();
+    animator.SetFloat("VelocityX", Mathf.Abs(rb.velocity.x));
+    animator.SetFloat("VelocityY", rb.velocity.y);
+    animator.SetBool("IsOnGround", true);
     }
 
 
